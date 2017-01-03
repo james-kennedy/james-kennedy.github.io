@@ -1,0 +1,182 @@
+@charset "utf-8";
+/* JAMES KENNEDY 2013 */
+
+/* hack for firefox outlining images */
+:focus { -moz-outline-style: none; }
+/* hack for IE outlining links */
+a {outline: none;}
+
+body {
+	background:#EDE3D7;
+	color:#3B3738;
+	font-family:verdana;
+	font-size:12px;
+	line-height:20px;
+	text-align:justify;
+	margin: 0;
+	min-width:960px;
+}
+h1 {
+	color:#C63D0F;
+	font-family:verdana;
+	font-size:15px;
+	letter-spacing:1px;
+	text-align:justify;
+	font-weight:525;
+}
+h2 {
+	color:#FDF3E7;
+	font-family:verdana;
+	font-size:26px;
+	letter-spacing:1px;
+	text-align:justify;
+	font-weight:525;
+}
+h3 {
+	color:#FDF3E7;
+	font-family:verdana;
+	font-size:18px;
+	letter-spacing:1px;
+	text-align:justify;
+	font-weight:525;
+}
+h4 {
+	color:#3B3738;
+	font-family:verdana;
+	font-size:18px;
+	letter-spacing:1px;
+	text-align:justify;
+	font-weight:525;
+}
+mark {
+    background-color: #FDF3E7;
+    color: #C63D0F;
+}
+p { top-margin:0px; }
+a{outline:none;}
+a img{outline:none;}
+img{border:0;}
+a:link{		text-decoration:none; 		color:#C63D0F;}
+a:visited{	text-decoration:none; 		color:#C63D0F;}
+a:hover{	text-decoration:underline; 	color:#C63D0F;}
+a:active{	text-decoration:underline; 	color:#C63D0F;}
+.wrapper {
+	width:960px;
+	height: auto;
+	margin: 0 auto;
+    position: relative;
+	padding: 0 0 0 0;
+	min-width:960px;
+}
+.wrapper:after {
+	clear:both;
+	content:"";
+	display:block;
+	line-height:0;
+	height:1%;
+	visibility:hidden;
+}
+#navbkg {
+	background-color: #7E8F7C;
+	border-bottom:3px solid #3B3738;
+	border-top:3px solid #3B3738;
+}
+#bannercontainer {
+	position: relative;
+	height:120px;
+	background-color: #C63D0F;
+}
+#leftbanner {
+	height:120px;
+	float:left;
+	padding-left:10px;
+	width:550px;
+}
+#rightbanner {
+	float:right;
+	/*background:transparent url(../images/NaoHeadSmall.png) no-repeat top right;*/
+	height:120px;
+	width:153px;
+}
+#cssmenu ul {
+	clear:both;
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	width:800px;
+	position:relative;
+	display:block;
+	height:50px;
+	font-size:18px;
+	font-weight:bold;
+	font-family:helvetica, sans-serif;
+}
+#cssmenu li {
+	display:block;
+	float:left;
+	margin:0;
+	padding:0;
+}
+#cssmenu li a {
+	display:block;
+	float:left;
+	text-decoration:none;
+	font-weight:bold;
+	padding:15px 25px 0 10px;
+	color: #3B3738;
+}
+#cssmenu li a:hover {
+	color:#FDF3E7;
+	height:25px;		
+}
+#cssmenu li.active a {
+	display:inline;
+	height:25px;
+	float:left;
+	margin:0;
+}
+#coretext {
+	background-color: #FDF3E7;
+}
+#maintext {
+	padding:15px 0 30px 15px;
+	width:620px;
+	float:left;
+}
+#fullwidthtext {
+	padding:15px 0 30px 15px;
+	width:940px;
+	float:left;
+}
+#rightcol {
+	font-family:verdana;
+	font-size:14px;
+	letter-spacing:1px;
+	padding:15px 0 0 60px;
+	width:250px;
+	float:left;
+	text-align:justify;
+}
+#footer {
+	border-top: 3px solid #3B3738;
+	color:#333333;
+	font-family:verdana;
+	font-size:9px;
+}
+.bibtext {
+	display:none; 
+	font-size:90%;
+	line-height:12px;
+	color:#3B3738;
+	border-left:thin solid #CCC;
+	border-bottom:thin solid #CCC;
+	width:100%;
+	text-align:left;
+	font-family: monospace;
+    white-space: pre;
+    padding-left:10px;
+}
+a.biblink { 
+	cursor:pointer;
+	color:#C63D0F;
+}
