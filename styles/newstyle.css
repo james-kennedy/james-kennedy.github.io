@@ -1,0 +1,116 @@
+@charset "utf-8";
+/* JAMES KENNEDY 2019 */
+
+/* hack for firefox outlining images */
+:focus { -moz-outline-style: none; }
+/* hack for IE outlining links */
+a {outline: none;}
+/* hack for chrome font weight */
+* {-webkit-font-smoothing: antialiased;}
+
+body {
+	background:#f7f7f7;
+	color:#3B3738;
+	font-family:'Montserrat';
+	font-size:1rem;
+	line-height:1.6rem;
+	margin: 0;
+}
+h1 {
+	color:rgb(38, 38, 38);
+	font-family:'Montserrat';
+	font-size:1.6rem;
+	font-weight:700;
+	line-height:1.8rem;
+	font-style: normal;
+}
+h2 {
+	color:rgb(239, 239, 239);
+	font-family:'Montserrat';
+	font-size:26px;
+	letter-spacing:1px;
+	font-weight:525;
+	font-style: normal;
+}
+h3 {
+	color:rgb(239, 239, 239);
+	font-family:'Montserrat';
+	font-size:22px;
+	letter-spacing:1px;
+	font-weight:525;
+	font-style: normal;
+}
+p {
+	font-family:'Montserrat';
+	font-style: normal;
+}
+img {
+	border:0;
+}
+a {
+	text-decoration: underline;
+	color:#4a3fb4;
+}
+a:hover {
+	text-decoration: none;
+}
+a:visited {	
+	text-decoration:none; 		
+}
+ul.cssmenu {
+	background-color:rgb(38, 38, 38);
+	margin:0;
+	padding:12px 0 12px 0;
+	font-size:18px;
+	font-weight:bold;
+	font-family:helvetica, sans-serif;
+	text-align:center;
+	position: fixed; /* Set the navbar to fixed position */
+	top: 0; /* Position the navbar at the top of the page */
+	width: 100%; /* Full width */
+}
+li.cssmenu {
+	margin:0;
+	padding:0;
+	display:inline;
+}
+li.cssmenu a {
+	text-decoration:none;
+	font-weight:bold;
+	padding:0;
+	margin:0 15px 0 15px;
+	color: rgb(239, 239, 239);
+	border-bottom: 1px solid rgba(239, 239, 239, 0);
+  	transition: border-bottom 400ms;
+}
+li.cssmenu a:hover {
+	text-decoration:none;
+	border-bottom: 1px solid rgb(239, 239, 239);	
+}
+.header {
+	top:0;
+	margin:0;
+	padding:110px 0 80px 0;
+	text-align:center;
+	background:linear-gradient(to top,#302f7b 0,#462d6d 100%);
+}
+.coretext {
+	margin:0 14% 0 14%;
+	padding:30px 0 0 0;
+	text-align:center;
+}
+#footer {
+	float:left;
+	width:100%;
+	color:rgb(239, 239, 239);
+	font-family:'Montserrat';
+	font-size:12px;
+	text-align:center;
+	background-color:rgb(38, 38, 38);
+}
+.clear {
+	all: revert;
+}
+.clear ul {
+	all: revert;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>James Kennedy</title>
+
+<meta name="keywords" content="James, Kennedy, humans, robots, social, interaction">
+<meta name="description" content="James Kennedy - Character Interaction Researcher">
+<meta name="author" content="James Kennedy">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<link rel="stylesheet" type="text/css" href="styles/styles.css">
+<link rel="stylesheet" type="text/css" href="styles/bibbase.css">
+
+<link rel="shortcut icon" href="favicon.ico"/>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+</head>
+
+<body>
+	<ul class="cssmenu">
+			<li class="cssmenu"><a href='#main'><span>HOME</span></a></li>
+			<li class="cssmenu"><a href='#projects'><span>PROJECTS</span></a></li>
+			<li class='cssmenu'><a href='#publications'><span>PUBLICATIONS</span></a></li>
+			<li class='cssmenu'><a href='#contact'><span>CONTACT</span></a></li>
+	</ul>
+
+	<div class='header' id="main">
+		<h2>James Kennedy</h2>
+		<h3>Research Scientist at Disney Research</h3>
+	</div>
+
+	<!--**** CONTENT IN HERE ****************-->
+	<div class='coretext'>
+		<p>	
+			I am a Research Scientist at <a href='https://la.disneyresearch.com' target='_blank'>Disney Research</a> in Los Angeles. I research and develop AI and embodied character interactions.
+		</p>
+		<p>	
+			Previously, I was a Post Doctoral Associate at Disney Research in Pittsburgh, USA. I worked on language-based character interaction as part of <a href='https://la.disneyresearch.com/people/jill-f-lehman/' target='_blank'>Jill Lehman's</a> group.
+		</p>
+		<p>					
+			I completed my PhD in Human-Robot Interaction at <a href='http://www.plymouth.ac.uk' target='_blank'>Plymouth University</a>, U.K. supervised by <a href='https://tonybelpaeme.me/' target='_blank'>Professor Tony Belpaeme</a>, <a href='http://paul-baxter.github.io/' target='_blank'>Dr Paul Baxter</a> and <a href='https://www.research.manchester.ac.uk/portal/angelo.cangelosi.html' target ='_blank'>Professor Angelo Cangelosi</a>. My PhD work focussed on tutoring children using a social robot.
+			During my PhD, I worked alongside the EU FP7 <a href="http://www.dream2020.eu/" target ='_blank'>DREAM project</a>, the EU H2020 <a href="http://www.l2tor.eu/" target ='_blank'>L2TOR project</a>, and the EU FP7 <a href='http://www.aliz-e.org/' target='_blank'>ALIZ-E project</a>.
+		</p>
+	</div>
+
+	<div class='coretext' id="projects">
+		<h1>Projects</h1>
+
+		<br>
+		<br>
+	</div>
+
+	<div class='coretext' id="publications">
+		<h1>Publications</h1>
+		<script src="https://bibbase.org/show?bib=https%3A%2F%2Fjames-kennedy.github.io%2FJKennedyBib.bib&jsonp=1"></script>
+	</div>
+
+	<div class='coretext' id="contact">
+		<h1>Contact</h1>
+		<p>
+			James Kennedy<br>
+			Disney Research Los Angeles<br>
+			email: james.r.kennedy [at] disney.com<br>
+			web: https://james-kennedy.github.io/
+		</p>
+		<br>
+		<br>
+	</div>
+	<!--**** CONTENT END HERE ****************-->
+
+	<div id='footer'>
+		<p>design and content &copy; James Kennedy 2019</p>
+	</div>
+
+</body>
+
+</html>
