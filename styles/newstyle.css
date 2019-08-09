@@ -108,9 +108,12 @@ li.cssmenu a:hover {
 	text-align:center;
 	background-color:rgb(38, 38, 38);
 }
-.clear {
-	all: revert;
+.projectrow {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    border-spacing: 10px;
 }
-.clear ul {
-	all: revert;
+.projectcol {
+    display: table-cell;
 }
