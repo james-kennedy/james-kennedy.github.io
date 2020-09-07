@@ -16,6 +16,21 @@
 
 <link rel="shortcut icon" href="favicon.ico"/>
 
+<!-- stylesheet for hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+	/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+	function myFunction() {
+		var x = document.getElementById("myTopnav");
+		if (x.className === "topnav") {
+			x.className += " responsive";
+		} else {
+			x.className = "topnav";
+		}
+	}
+</script>
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
@@ -47,12 +62,15 @@ $(document).ready(function(){
 </head>
 
 <body>
-	<ul class="cssmenu">
-			<li class="cssmenu"><a href='#main'>HOME</a></li>
-			<li class="cssmenu"><a href='#projects'>RESEARCH</a></li>
-			<li class='cssmenu'><a href='#publications'>PUBLICATIONS</a></li>
-			<li class='cssmenu'><a href='#contact'>CONTACT</a></li>
-	</ul>
+	<div class="topnav" id="myTopnav">
+		<a href="#main" class="active">HOME</a>
+		<a href="#projects">RESEARCH</a>
+		<a href="#publications">PUBLICATIONS</a>
+		<a href="#contact">CONTACT</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		  <i class="fa fa-bars"></i>
+		</a>
+	</div>
 
 	<div class='header' id="main">
 		<h2>James Kennedy</h2>
